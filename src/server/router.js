@@ -11,7 +11,7 @@ router.get('*', (req, res) => {
 	const context = {};
 
 	const app = renderToString(
-		<StaticRouter basename="/page" context={context} location={req.url} >
+		<StaticRouter basename="/r" context={context} location={req.url} >
 			<AppRoutes />
 		</StaticRouter>
 	);

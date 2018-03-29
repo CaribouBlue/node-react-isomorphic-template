@@ -8,6 +8,8 @@ const renderHtml = (rootContent, title='Isomorphic Template') => {
 		</head>
 		<body>
 			<div id="root">${rootContent}</div>
+
+			<script src="/js/bundle.js"></script>
 		</body>
 		</html>
 	`

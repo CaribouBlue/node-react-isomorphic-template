@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import AppRoutes from './AppRoutes';
 
 const AppRouter = props => (
-	<Router>
+	<Router basename="r">
 		<AppRoutes />
 	</Router>
 );
