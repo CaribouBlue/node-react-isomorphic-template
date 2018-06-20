@@ -1,20 +1,24 @@
 const path = require('path');
 
 module.exports = [{
-	entry: './src/client/js/index.jsx',
+	entry: './src/client/index.jsx',
 	output: {
 		path: path.join(__dirname, 'static/js'),
 		filename: 'bundle.js',
 	},
 	resolve: {
-		extensions: ['.js', '.jsx', '.css'],
+		extensions: ['.js', '.jsx', '.scss'],
 	},
 	module: {
 		rules: [
 			{
-				test: /\.css$/,
+				test: /\.scss$/,
 				exclude: /node_modules/,
-				use: [ {loader: 'style-loader '}, {loader: 'css-loader'} ],
+				use: [ 
+					'style-loader',
+					'css-loader',
+					'sass-loader'
+				],
 			},
 			{
 				test: /\.js$/,

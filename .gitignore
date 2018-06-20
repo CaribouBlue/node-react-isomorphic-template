@@ -1,7 +1,8 @@
 .sass-cache
 main.css.map
 /build
-/node_modules
+/node_modules/
 /static/js
 /static/images
 package-lock.json
+*.log
