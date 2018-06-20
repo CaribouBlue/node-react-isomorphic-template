@@ -21,8 +21,7 @@ if (cluster.isMaster) {
     app.use(express.static(path.join(__dirname, '../../static')));
 
     // Routes for server rendering
-    app.get(['/r', '/r/*'], router);
-    app.get('/', (req, res) => res.redirect('/r'));
+    app.use('/', router);
 
     // All workers use this port
     app.listen(PORT, () => console.log(`Worker #${cluster.worker.id} listening on port ${PORT}`));

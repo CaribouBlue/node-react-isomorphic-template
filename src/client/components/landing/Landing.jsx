@@ -1,8 +1,9 @@
 import React from 'react';
+import './landing'
 
 const Landing = props => (
 	<div>
-		Welcome
+		<h1>Welcome</h1>
 	</div>
 );
 

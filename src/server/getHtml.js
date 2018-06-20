@@ -1,4 +1,4 @@
-const renderHtml = (rootContent, title='Isomorphic Template') => {
+const renderHtml = (rootContent, title) => {
 	return `
 		<!doctype html>
 		<html>
